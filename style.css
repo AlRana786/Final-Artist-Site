@@ -1,210 +1,359 @@
-h1, h2, h3, h4, h5, h6, p {
+/* GLOBALS */
+* {
+    box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
     margin: 0;
-  }
-  
-  
-  
-  
-  body {
+}
+
+
+body {
     background-color: rgb(214, 218, 224);
-    
-  }
-  
-  /*HEADER*/
-  
-  header {
+    padding: 0;
+    margin: 0;
+}
+
+section {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+/*HEADER*/
+
+header {
     background-color: rgb(178, 182, 190);
     position: sticky;
     top: 0;
-  }
-  
-  .nav a {
-    display: block;
-    padding: 15px 15px;
-    text-decoration: none;
-    color: white;
-  
-  
-  }
-  
-  
-  
-  .nav {
     border: 3px solid rgb(8, 64, 168);
-    font-size: 45px;
+    border-radius: 15px;
+    margin: 20px 70px 0;
+    z-index: 100;
+
+}
+
+.nav {
+
+    font-size: 1.5rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-left: 15px;
     padding-right: 15px;
-    border-radius: 15px;
-    
-    
-    
-    
-  
-  }
-  
-  .logo {
+}
+
+header .hamburger {
+    display: none;
+}
+
+.nav a {
+    display: block;
+    padding: 15px 15px;
+    text-decoration: none;
+    color: white;
+
+
+}
+
+
+
+
+
+
+.logo {
     height: 80px;
     width: 135px;
     padding: 10px 15px;
-    
-  }
-  
-  /*HERO*/
-  
-  .hero {
-  
-    padding: 10px 70px;
-  
-    
-  
-  
-    
-  }
-   
-  
-  
-  /*ABOUT*/
-  
-  
-  .about {
+
+}
+
+/*HERO*/
+#home {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.hero {
+    width: 100%;
+    height: auto;
+    border-radius: 60px;
+
+
+}
+
+
+
+/*ABOUT*/
+#about {
     color: rgb(8, 64, 168);
+}
+
+.about-text {
     font-size: 25px;
-    text-align: center;
-    padding: 10px 70px;
     line-height: 2em;
-  
-  }
-  
-  .about-text {
+    text-align: justify;
+}
+
+#about h2 {
+    font-size: 200px;
+    padding: 40px 0 20px;
+}
+
+
+/*MUSIC*/
+
+#music {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+#music h2 {
     color: rgb(8, 64, 168);
     font-size: 200px;
-    padding: 40px 0px 20px 70px;
     text-align: left;
-  }
-  
-  
-  /*MUSIC*/
-  
-  .music-text {
-    color: rgb(8, 64, 168);
-    font-size: 200px;
-    padding: 40px 0px 20px 70px;
-    text-align: left;
-    
-  }
-  
-  .music-hero {
-  
-    height: 60rem;
-    width: 80rem;
-    padding: 0px 70px 5em 70px;
-    
-  
-  }
-  
-  
-  .music-section {
-    padding-left: 70px;
-    padding-right: 70px;
-    display: flex;
-    justify-content: space-between;
-  
-  }
-  
-  .single-cover {
-  
-  }
-  
-  .single-cover img {
-  
-    height: 25rem;
-    width: 25rem;
+    padding: 40px 0 20px;
+
+}
+
+.music-hero {
+
+    width: 100%;
+    height: auto;
+    border-radius: 60px;
+
+
+
+}
+
+
+.music-section {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 20px;
+    padding-top: 20px;
+
+}
+
+.music-section div.single, .music-section div.single .cover {
+    position: relative;
+    width: 100%;
+}
+
+.music-section div.single .cover img {
+    width: 100%;
+    height: auto;
     border-radius: 15px;
-    
-  }
-  
-  
-  
-  
-  /*VIDEO*/
-  
-  .video-text {
+}
+
+.music-section div.single a.detail-button {
+    display: block;
+    color: white;
+    font-family: 'Merriweather Sans', sans-serif;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    margin: 6px auto 0;
+    border: 3px solid rgb(8, 64, 168);
+    background: rgb(178, 182, 190);
+    padding: 1rem 3rem;
+    border-radius: 15px;
+}
+
+.pop-up {
+    border: 3px solid white;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 1rem 3rem;
+    border-radius: 15px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    z-index: 10;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pop-up.open {
+    display: flex;
+}
+
+.pop-up a {
+    color: white;
+    font-family: 'Merriweather Sans', sans-serif;
+    text-decoration: none;
+    font-size: 25px;
+
+
+
+}
+
+
+
+
+
+/*VIDEO*/
+
+#video {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+#video h2 {
     color: rgb(8, 64, 168);
     font-size: 200px;
-    padding: 40px 0px 20px 70px;
     text-align: left;
-    
-  }
-  
-  
-  .video-hero {
-    height: 60rem;
-    width: 90rem;
-    padding: 0px 70px 5em 70px;
-    
-  
-  
-  }
-  
-  
-  .video-section {
-    padding-left: 70px;
-    padding-right: 70px;
-    display: flex;
-    justify-content: space-between;
-  
-  
-  }
-  
-  
-  .video-section img {
-    height: 15rem;
-    width: 23rem;
+    padding: 40px 0 20px;
+
+}
+
+
+
+
+.video-hero {
+    width: 100%;
+    height: auto;
+    border-radius: 60px;
+
+
+
+}
+
+
+.video-section {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 20px;
+    padding-top: 20px;
+
+
+}
+
+
+.video-section img {
+    width: 100%;
+    height: auto;
     border-radius: 15px;
-  
-  
-  }
-  
-  
-  .video-cover {
-  
-  }
-  
-  .video-cover img {
-  
-    /*height: 25rem;
-    width: 25rem;
-    border-radius: 15px;*/
-    
-  }
-  
-  
-  /*CONTACT*/
-  
-  .contact {
-  
-  
-  }
-  
-  
-  
-  /*FOOTER*/
-  
-  .footer {
+
+
+}
+
+
+
+
+/*CONTACT*/
+
+.contact {}
+
+
+
+/*FOOTER*/
+
+.footer {
     color: rgb(8, 64, 168);
     text-align: center;
-  
-  }
-  
-  
-  
-  .merriweather {
+
+}
+
+
+
+.merriweather {
     font-family: 'Merriweather Sans', sans-serif;
-  }
-  
-  .six-caps {
+}
+
+.six-caps {
     font-family: 'Six Caps', sans-serif;
-  }
+}
+
+
+
+/*RESPONSIVE*/
+
+@media (max-width: 600px) {
+    section {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    header .hamburger {
+        display: block;
+    }
+    header .nav {
+        flex-direction: column;
+    }
+
+    header .nav a {
+        display: none;
+    }
+
+    header .nav.open a {
+        display: block;
+    }
+
+    .music-section {
+        grid-template-columns: auto auto;
+    }
+
+    .about-text {
+        font-size: 15px;
+        line-height: 2em;
+
+    }
+
+    #about h2,
+    #music h2,
+    #video h2 {
+        font-size: 100px;
+
+    }
+
+    .video-section {
+        grid-template-columns: auto auto;
+
+    }
+
+
+}
+
+@media (min-width: 546px) and (max-width: 900px) {
+
+    section {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    header .hamburger {
+        display: block;
+        position: absolute;
+        top: 12px;
+        right: 12px;
+    }
+    header .nav {
+        flex-direction: column;
+    }
+
+    header .nav a {
+        display: none;
+    }
+
+    header .nav.open a {
+        display: block;
+    }
+
+    .music-section {
+        grid-template-columns: auto auto;
+    }
+
+    .video-section {
+        grid-template-columns: auto auto;
+
+    }
+
+}
