@@ -24,6 +24,11 @@ section {
     padding-right: 70px;
 }
 
+
+section img {
+    box-shadow: 0 0 2rem rgb(70, 69, 69)
+}
+
 /*HEADER*/
 
 header {
@@ -149,6 +154,7 @@ header .hamburger {
     width: 100%;
     height: auto;
     border-radius: 15px;
+    
 }
 
 .music-section div.single a.detail-button {
@@ -241,7 +247,7 @@ header .hamburger {
     width: 100%;
     height: auto;
     border-radius: 15px;
-
+    
 
 }
 
