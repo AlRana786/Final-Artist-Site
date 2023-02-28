@@ -29,6 +29,9 @@ section img {
     box-shadow: 0 0 2rem rgb(70, 69, 69)
 }
 
+
+
+
 /*HEADER*/
 
 header {
@@ -39,7 +42,7 @@ header {
     border-radius: 15px;
     margin: 20px 70px 0;
     z-index: 100;
-
+    
 }
 
 .nav {
@@ -61,9 +64,14 @@ header .hamburger {
     padding: 15px 15px;
     text-decoration: none;
     color: white;
+    transition: color 0.4s ease-in-out;
 
 
 }
+
+.nav a:hover {
+    color: rgb(48, 136, 219);
+  }
 
 
 
@@ -169,7 +177,15 @@ header .hamburger {
     background: rgb(178, 182, 190);
     padding: 1rem 3rem;
     border-radius: 15px;
+    transition: color 0.4s ease-in-out;
 }
+
+.music-section div.single a.detail-button:hover {
+    color: rgb(48, 136, 219);
+  }
+
+
+
 
 .pop-up {
     border: 3px solid white;
@@ -184,6 +200,7 @@ header .hamburger {
     display: none;
     flex-direction: column;
     align-items: center;
+    
 }
 
 .pop-up.open {
@@ -290,6 +307,9 @@ header .hamburger {
 
     header .hamburger {
         display: block;
+        position: absolute;
+        top: 12px;
+        right: 12px;
     }
     header .nav {
         flex-direction: column;
