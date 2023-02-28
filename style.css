@@ -86,6 +86,8 @@ header .hamburger {
 }
 
 /*HERO*/
+
+
 #home {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -102,6 +104,7 @@ header .hamburger {
 
 
 /*ABOUT*/
+
 #about {
     color: rgb(8, 64, 168);
 }
