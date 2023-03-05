@@ -16,14 +16,10 @@ const buttonTwo = document.getElementById("button-2")
 const buttonThree = document.getElementById("button-3")
 const buttonFour = document.getElementById("button-4") 
 
-
-
 buttonOne.addEventListener("click", showPopUp1)
 buttonTwo.addEventListener("click", showPopUp2)
 buttonThree.addEventListener("click", showPopUp3)
 buttonFour.addEventListener("click", showPopUp4)
-
-
 
 function showPopUp1(evt) {
     evt.preventDefault();
